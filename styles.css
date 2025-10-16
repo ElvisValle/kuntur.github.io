@@ -1753,4 +1753,14 @@ body {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+
 }
+
+* { box-sizing: border-box; }
+html, body { width: 100%; max-width: 100%; overflow-x: hidden; }
+
+/* Medios siempre responsivos */
+img, video, iframe { display: block; max-width: 100%; height: auto; }
+
+/* Evitar 100vw (suma la barra de scroll) */
+.hero, .banner, .full-width { width: 100%; }
