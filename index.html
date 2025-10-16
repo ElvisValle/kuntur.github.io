@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuntur Spirit | 5-Day Andean Spiritual Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="imagen-pareja"></div>
+    <nav class="navbar">
+        <a class="logo-container" href="#top">
+            <img src="./img/logo_horizontal_blanco.png" alt="Company Logo" class="company-logo-navbar" />
+        </a>
+        <div class="navbar-actions">
+            <p class="phone-number">
+                Call us: <a href="tel:+51987104935" style="color: inherit; text-decoration: none">+51 987 104 935</a>
+            </p>
+            <button class="cta-button" type="button">
+                <a class="button-text"
+                    href="https://wa.me/51987104935?text=%F0%9F%91%8B%20%C2%A1Hola!%20quiero%20una%20cotizacion%20de%20la%20experiencia%20espiritual%20de%205%20d%C3%ADas%20en%20Cusco."
+                    target="_blank" rel="noopener">
+                    How much would my trip cost?
+                </a>
+            </button>
+        </div>
+    </nav>
+    <main class="travel-experience-container">
+        <!-- Imagen decorativa pegada a las esquinas, dentro del main -->
+        <img src="./img/foto-pareja.png" alt="Decoración" class="main-side-image">
+        <!-- Imagen decorativa para móvil (pegada abajo) -->
+        <img src="./img/foto-pareja-movil.png" alt="Decoración móvil" class="main-bottom-image">
+        <header class="promotional-tags">
+            <div class="tag-limited-spots">
+                <span class="tag-text">Limited Spots</span>
+            </div>
+            <div class="tag-duration">
+                <span class="tag-text">5 Days / 4 Nights</span>
+            </div>
+        </header>
+
+        <section class="main-content">
+            <h1 class="main-title-inicio">YOUR BEST MEMORIES ARE ABOUT TO BEGIN</h1>
+
+            <p class="main-description">
+                A spiritual experience guided by an Andean master in the sacred places of Cusco.
+            </p>
+
+            <article class="features-grid">
+                <div class="features-column">
+                    <div class="feature-item">
+                        <svg class="checkmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.796 5.86801L19.404 6.99601L12.432 17.052H10.824L6.936 11.604L8.544 10.104L11.628 12.984L17.796 5.86801Z"
+                                fill="#41180D"></path>
+                        </svg>
+                        <span class="feature-text">Discover Machu Picchu</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg class="checkmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.796 5.86798L19.404 6.99598L12.432 17.052H10.824L6.936 11.604L8.544 10.104L11.628 12.984L17.796 5.86798Z"
+                                fill="#41180D"></path>
+                        </svg>
+                        <span class="feature-text">Peruvian Gastronomy</span>
+                    </div>
+                </div>
+
+                <div class="features-column">
+                    <div class="feature-item">
+                        <svg class="checkmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.796 5.86801L19.404 6.99601L12.432 17.052H10.824L6.936 11.604L8.544 10.104L11.628 12.984L17.796 5.86801Z"
+                                fill="#41180D"></path>
+                        </svg>
+                        <span class="feature-text">Bilingual Guides</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg class="checkmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.796 5.86798L19.404 6.99598L12.432 17.052H10.824L6.936 11.604L8.544 10.104L11.628 12.984L17.796 5.86798Z"
+                                fill="#41180D"></path>
+                        </svg>
+                        <span class="feature-text">Guías bilingües</span>
+                    </div>
+                </div>
+            </article>
+
+            <div class="special-feature">
+                <svg class="checkmark-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.796 5.86798L19.404 6.99598L12.432 17.052H10.824L6.936 11.604L8.544 10.104L11.628 12.984L17.796 5.86798Z"
+                        fill="#41180D"></path>
+                </svg>
+                <span class="feature-text">Andean Spiritual Ceremony (Wachuma – San Pedro)</span>
+            </div>
+        </section>
+
+        <section class="action-section">
+            <div class="buttons-container">
+                <a href="#reserva" class="btn-primary">Book Now</a>
+                <a class="btn-whatsapp"
+                    href="https://wa.me/51987104935?text=%F0%9F%91%8B%C2%A1Hola!%20Me%20interesa%20una%20cotizaci%C3%B3n%20del%20tour%20espiritual%20de%205%20d%C3%ADas."
+                    target="_blank" rel="noopener">
+                    Chat on WhatsApp
+                </a>
+            </div>
+
+            <p class="offer-countdown" id="countdown">
+                Offer ends in <span id="days"></span> days, <span id="hours"></span> hours, <span id="minutes"></span>
+                min, <span id="seconds"></span> sec
+            </p>
+            <script>
+                // Fecha de fin de la oferta (ajusta la fecha y hora aquí)
+                const offerEnd = new Date("2025-11-13T23:59:59").getTime();
+
+                function updateCountdown() {
+                    const now = new Date().getTime();
+                    const distance = offerEnd - now;
+
+                    if (distance < 0) {
+                        document.getElementById("countdown").innerHTML = "La oferta ha terminado";
+                        return;
+                    }
+
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    document.getElementById("days").textContent = days;
+                    document.getElementById("hours").textContent = hours;
+                    document.getElementById("minutes").textContent = minutes;
+                    document.getElementById("seconds").textContent = seconds;
+                }
+
+                updateCountdown();
+                setInterval(updateCountdown, 1000);
+            </script>
+            </p>
+        </section>
+
+        <footer class="logo-section">
+            <img src="./img/logo-horizontal-color.png" alt="Logo" class="company-logo">
+            <img src="./img/logo_horizontal_blanco.png" alt="Logo" class="company-logo-blanco">
+        </footer>
+    </main>
+    <section class="travel-description-section">
+        <div class="content-container">
+            <header class="section-header">
+                <h1 class="main-title">General Description</h1>
+            </header>
+
+            <article class="description-text">
+                This journey is an invitation to awaken. Walk through ancient temples and experience an ancestral
+                ceremony with Wachuma (San Pedro) guided by an Andean master in the Sacred Valley — a safe and natural
+                environment for introspection, energy cleansing, and deep spiritual connection. Then, travel to Machu
+                Picchu, the energetic heart of the Andean world, to complete your transformation with clarity and
+                strength.
+                <br />
+                <span class="highlight-text">
+                    Ideal for those who seek more than tourism: a true awakening.
+                </span>
+            </article>
+
+            <section class="activities-list">
+                <div class="activity-item">
+                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/84066e1668648649827bf48937f8fea4f588fe86?placeholderIfAbsent=true&apiKey=65e45905ada7415c8618cce03f37f281"
+                        alt="Icono de tour" class="activity-icon" />
+                    <p class="activity-description">
+                        <span class="activity-title">Cusco City Tour:</span>
+                        Catedral, Koricancha, Sacsayhuamán, Qenqo, Puca Pucara y Tambomachay.
+                    </p>
+                </div>
+
+                <div class="activity-item">
+                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/3514347b00251261bddfca6e47928b1175d482bc?placeholderIfAbsent=true&apiKey=65e45905ada7415c8618cce03f37f281"
+                        alt="Icono de ceremonia" class="activity-icon" />
+                    <p class="activity-description">
+                        <span class="activity-title">
+                            Andean Wachuma Ceremony (Sacred Valley):
+                        </span>
+                        Transfer to the valley, welcome by the Andean master at the retreat house, ceremony start,
+                        nature walk, meditation, group reflection, light meal, and integration.
+                    </p>
+                </div>
+
+                <div class="activity-item">
+                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/3514347b00251261bddfca6e47928b1175d482bc?placeholderIfAbsent=true&apiKey=65e45905ada7415c8618cce03f37f281"
+                        alt="Icono de Machu Picchu" class="activity-icon" />
+                    <p class="activity-description">
+                        <span class="activity-title">Machu Picchu Full Day:</span>
+                        Tourist train from Ollantaytambo, bus to the Sanctuary, guided tour, and return.
+                    </p>
+                </div>
+            </section>
+
+            <section class="includes-section">
+                <h2 class="includes-title">Includes:</h2>
+
+                <div class="service-tags">
+                    <div class="service-tag">
+                        <span class="tag-text">Flights Lima – Cusco – Lima</span>
+                    </div>
+                    <div class="service-tag">
+                        <span class="tag-text">All Transfers</span>
+                    </div>
+                    <div class="service-tag">
+                        <span class="tag-text">3-Star Hotel</span>
+                    </div>
+                    <div class="service-tag">
+                        <span class="tag-text">Entrance Tickets</span>
+                    </div>
+                    <div class="service-tag">
+                        <span class="tag-text">24/7 Assistance</span>
+                    </div>
+                    <div class="service-tag">
+                        <span class="tag-text">Professional Guides</span>
+                    </div>
+                </div>
+            </section>
+
+            <button class="download-button"
+                onclick="window.open('./pdf/5D-4N Machupicchu-Wachuma-Kuntur.pdf', '_blank')">
+                <span class="button-text">Download Itinerary</span>
+                <img src="https://api.builder.io/api/v1/image/assets/TEMP/3547ec3a61bde6a97508700bf8c10278ec72a308?placeholderIfAbsent=true&apiKey=65e45905ada7415c8618cce03f37f281"
+                    alt="Icono de descarga" class="button-icon" />
+            </button>
+        </div>
+
+        <div class="image-container">
+            <video class="destination-video" controls muted>
+                <source src="./img/reel-wachuma-en.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq-container">
+            <h1 class="faq-title">Frequently Asked Questions</h1>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="question-text">¿Is the Wachuma ceremony legal and safe in Peru??</span>
+                        <svg class="faq-arrow" width="28" height="16" viewBox="0 0 28 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.588 15.4142C13.369 16.1953 14.6373 16.1953 15.4183 15.4142L27.4143 3.41647C28.1952 2.63539 28.1952 1.36692 27.4143 0.585837C26.6333 -0.195246 25.3649 -0.195246 24.584 0.585837L14 11.1713L3.41604 0.592089C2.63506 -0.188994 1.36673 -0.188994 0.585739 0.592089C-0.195249 1.37317 -0.195249 2.64164 0.585739 3.42272L12.5817 15.4204L12.588 15.4142Z"
+                                fill="#865042" />
+                        </svg>
+                    </summary>
+                    <div class="answer-divider"></div>
+                    <p class="faq-answer">
+                        Yes, it is performed in traditional settings with authorized guides and care
+                        protocols. Important: Do not transport plants or derivatives outside of Peru.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="question-text">¿How long does the experience last?</span>
+                        <svg class="faq-arrow" width="28" height="16" viewBox="0 0 28 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.588 15.4142C13.369 16.1953 14.6373 16.1953 15.4183 15.4142L27.4143 3.41647C28.1952 2.63539 28.1952 1.36692 27.4143 0.585837C26.6333 -0.195246 25.3649 -0.195246 24.584 0.585837L14 11.1713L3.41604 0.592089C2.63506 -0.188994 1.36673 -0.188994 0.585739 0.592089C-0.195249 1.37317 -0.195249 2.64164 0.585739 3.42272L12.5817 15.4204L12.588 15.4142Z"
+                                fill="#865042" />
+                        </svg>
+                    </summary>
+                    <div class="answer-divider"></div>
+                    <p class="faq-answer">
+                        One full-day session (approx. 8–10 hrs): opening and intention, ceremony,
+                        light walk/meditation, closing, and integration.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="question-text">¿Where does it take place?</span>
+                        <svg class="faq-arrow" width="28" height="16" viewBox="0 0 28 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.588 15.4142C13.369 16.1953 14.6373 16.1953 15.4183 15.4142L27.4143 3.41647C28.1952 2.63539 28.1952 1.36692 27.4143 0.585837C26.6333 -0.195246 25.3649 -0.195246 24.584 0.585837L14 11.1713L3.41604 0.592089C2.63506 -0.188994 1.36673 -0.188994 0.585739 0.592089C-0.195249 1.37317 -0.195249 2.64164 0.585739 3.42272L12.5817 15.4204L12.588 15.4142Z"
+                                fill="#865042" />
+                        </svg>
+                    </summary>
+                    <div class="answer-divider"></div>
+                    <p class="faq-answer">
+                        In sacred locations around the Sacred Valley and Cusco, chosen according to
+                        weather and logistics to ensure privacy and respect.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span class="question-text">¿How do I book and make a payment?</span>
+                        <svg class="faq-arrow" width="28" height="16" viewBox="0 0 28 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.588 15.4142C13.369 16.1953 14.6373 16.1953 15.4183 15.4142L27.4143 3.41647C28.1952 2.63539 28.1952 1.36692 27.4143 0.585837C26.6333 -0.195246 25.3649 -0.195246 24.584 0.585837L14 11.1713L3.41604 0.592089C2.63506 -0.188994 1.36673 -0.188994 0.585739 0.592089C-0.195249 1.37317 -0.195249 2.64164 0.585739 3.42272L12.5817 15.4204L12.588 15.4142Z"
+                                fill="#865042" />
+                        </svg>
+                    </summary>
+                    <div class="answer-divider"></div>
+                    <p class="faq-answer">
+                        Complete the form or write to us on WhatsApp. We’ll send availability, deposit
+                        amount, balance, and payment options (credit card / PayPal / bank transfer).
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de disponibilidad -->
+
+    <section class="availability-form-section" id="reserva">
+        <div class="form-container">
+            <div class="form-card">
+                <header class="form-header">
+                    <h2 class="main-title">Check Availability Now</h2>
+                    <p class="form-description">
+                        Fill out the form or contact us via WhatsApp. We’ll send availability, deposit details, balance,
+                        and payment methods (credit card / PayPal / bank transfer).
+                    </p>
+                </header>
+
+                <form class="availability-form" id="availabilityForm">
+                    <div class="form-field">
+                        <label for="name" class="field-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email" class="field-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input"
+                            placeholder="youremail@example.com" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="whatsapp" class="field-label">WhatsApp</label>
+                        <div class="phone-input-container">
+                            <div class="country-selector" id="countrySelector">
+                                <img src="https://flagcdn.com/us.svg" alt="US flag" class="country-flag"
+                                    id="selectedFlag">
+                                <div class="country-code-container">
+                                    <span class="country-code" id="selectedCode">+1</span>
+                                    <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                        <path
+                                            d="M5.39485 7.2437C5.72955 7.58543 6.27312 7.58543 6.60783 7.2437L11.749 1.99473C12.0837 1.653 12.0837 1.09803 11.749 0.756298C11.4143 0.414567 10.8707 0.414567 10.536 0.756298L6 5.38742L1.46402 0.759031C1.12931 0.417301 0.585741 0.417301 0.251032 0.759031C-0.0836773 1.10076 -0.0836773 1.65573 0.251032 1.99746L5.39217 7.24644L5.39485 7.2437Z"
+                                            fill="black" />
+                                    </svg>
+                                </div>
+                                <div class="phone-separator"></div>
+                                <ul class="country-list" id="countryList" style="display:none;">
+                                    <li data-code="+1" data-flag="https://flagcdn.com/us.svg">🇺🇸 USA (+1)</li>
+                                    <li data-code="+1" data-flag="https://flagcdn.com/ca.svg">🇨🇦 Canada (+1)</li>
+                                    <li data-code="+52" data-flag="https://flagcdn.com/mx.svg">🇲🇽 México (+52)</li>
+
+
+                                    <!-- Agrega más países si lo deseas -->
+                                </ul>
+                            </div>
+                            <input type="tel" id="whatsapp" name="whatsapp" class="phone-input"
+                                placeholder="123 456 789" required pattern="[0-9\s]+" inputmode="numeric">
+                        </div>
+                    </div>
+
+                    <div class="checkbox-container">
+                        <div class="custom-checkbox">
+                            <input type="checkbox" id="terms" name="terms" class="checkbox-input" required>
+                            <div class="checkbox-visual">
+                                <div class="checkbox-circle"></div>
+                            </div>
+                        </div>
+                        <label for="terms" class="terms-label">
+                            <span class="terms-text">I accept the Terms and Privacy Policy</span>
+                            <a href="https://kunturspirit.com/politicas-de-privacidad-y-proteccion-de-datos/"
+                                target="_blank" class="terms-link">Read</a>
+                        </label>
+                    </div>
+
+                    <div class="submit-container">
+                        <button type="submit" class="submit-button">
+                            Get My Quote
+                        </button>
+                    </div>
+                </form>
+
+                <footer class="form-footer">
+                    <p class="footer-text">Limited spots · Early Booking 2025</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer de la página -->
+
+    <footer class="site-footer">
+        <div class="copyright-text">
+            <p class="footer-text">copyright © 2024 - Kuntur Spirit S.A.C</p>
+        </div>
+        <div class="website-url">
+            <a href="https://kunturspirit.com/" target="_blank" class="footer-text">www.kunturspirit.com</a>
+        </div>
+    </footer>
+
+    <a href="#" class="scroll-to-top" id="scrollToTopBtn" aria-label="Volver al inicio">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <circle cx="18" cy="18" r="18" fill="#41180D" opacity="0.8" />
+            <path d="M18 25V11M18 11L11 18M18 11L25 18" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </a>
+
+    <script>
+        let lastScroll = 0;
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', function () {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > 50) {
+                navbar.classList.remove('oculto');
+            } else {
+                navbar.classList.add('oculto');
+            }
+        });
+        window.addEventListener('DOMContentLoaded', function () {
+            navbar.classList.add('oculto');
+        });
+    </script>
+
+    <script>
+        const scrollBtn = document.getElementById('scrollToTopBtn');
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 200) {
+                scrollBtn.style.display = 'flex';
+            } else {
+                scrollBtn.style.display = 'none';
+            }
+        });
+        // Ocultar al inicio
+        scrollBtn.style.display = 'none';
+        // Scroll suave al hacer clic
+        scrollBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+    <script>
+        const countrySelector = document.getElementById('countrySelector');
+        const countryList = document.getElementById('countryList');
+        const selectedCode = document.getElementById('selectedCode');
+        const selectedFlag = document.getElementById('selectedFlag');
+
+        // Mostrar/ocultar lista al hacer clic en el selector
+        countrySelector.addEventListener('click', function (e) {
+            countryList.style.display = countryList.style.display === 'block' ? 'none' : 'block';
+            e.stopPropagation();
+        });
+
+        // Cambiar código y bandera al seleccionar país y ocultar el menú
+        countryList.addEventListener('click', function (e) {
+            if (e.target.tagName === 'LI') {
+                selectedCode.textContent = e.target.getAttribute('data-code');
+                selectedFlag.src = e.target.getAttribute('data-flag');
+                countryList.style.display = 'none';
+                e.stopPropagation();
+            }
+        });
+
+        // Ocultar lista si se hace clic fuera
+        document.addEventListener('click', function () {
+            countryList.style.display = 'none';
+        });
+    </script>
+    <script>
+        document.getElementById('availabilityForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            window.location.href = 'gracias-contacto.html';
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
